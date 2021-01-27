@@ -13,25 +13,33 @@ header {
   background-color: #0D325A;
 }
 
-header ul li{
-  margin-left: 200px;
+li{
   list-style: none;
-  display: inline-block;
   text-transform: uppercase;
   font-size: 0.7em;
+  display: inline-block;
 }
 
-header ul a {
+a {
   text-decoration: none;
   color: white;
 }
 
-div.logo, ul, li {
+.nav , .logo {
   display: inline-block;
 }
+
+
+/* div.logo, ul, li {
+  display: inline-block;
+} */
 
 /* --- LAYOUT --- */
 .container {
   width: 80%;
   margin: 0 auto;
 }
+
+/* section.container ul {
+  float: right;
+} */
