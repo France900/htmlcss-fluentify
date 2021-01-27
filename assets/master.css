@@ -8,13 +8,25 @@
 .row::after {
 }
 
+/* --- LAYOUT --- */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* HEADER */
 header {
+  /* background-color: #0D325A; */
+}
+
+nav {
+  height: 55px;
   background-color: #0D325A;
 }
 
 .logo {
   display: inline-block;
+  /* margin-left: 10px; */
 }
 
 a {
@@ -26,6 +38,8 @@ li {
   list-style: none;
   text-transform: uppercase;
   font-size: 0.7em;
+  vertical-align:middle;
+  margin-left: 20px;
 }
 
 div, ul.menu, li {
@@ -36,46 +50,21 @@ div, ul.menu, li {
   float: right;
 }
 
+#border-button {
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 8px;
+}
 
+#color-button {
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* li{
-  list-style: none;
-  text-transform: uppercase;
-  font-size: 0.7em;
-  display: inline-block;
-} */
-
-
-
-/* nav , .logo {
-  display: inline-block;
-} */
-
-/* header div section {
-  float: right;
-} */
-
-
-
-/* --- LAYOUT --- */
-.container {
-  width: 80%;
-  margin: 0 auto;
+/* --- JUMBO --- */
+.jumbo {
+  background: url(./img/background-header.png);
+  height: 500px;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
