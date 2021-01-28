@@ -46,7 +46,7 @@ ul {
   vertical-align:middle;
 }
 
-header a {
+header a, footer a {
   text-decoration: none;
   color: white;
 }
@@ -199,12 +199,26 @@ hr.between {
 }
 
 /* <!-- FOOTER --> */
+/* col-50 selectors in row 2 columt 1 too
+jumb-button in jumbo
+a href in header
+flo-right in NAVIGAZIONE(header)*/
+
 footer {
   background-color: lightgray;
   height: 150px;
 }
 
-/* col-50 selectors in row 2 columt 1 too */
+footer p {
+  font-size: 0.8em;
+  display: inline-block;
+}
+
+section > p {
+  color: gray;
+}
+
+
 
 .fixed-bottom a {
   text-decoration: none;
