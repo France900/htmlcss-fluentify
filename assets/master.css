@@ -5,31 +5,48 @@
   box-sizing: border-box;
 }
 
-.row::after {
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
 }
 
-/* --- LAYOUT --- */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* COMMON TAG / LAYOUT ------------------------------------------- */
 .container {
   width: 80%;
   margin: 0 auto;
 }
 
-/* HEADER */
+.logo, ul, li {
+  display: inline-block;
+}
+
+/* <!-- NAVIGAZIONE (header)--> */
 header {
-  /* background-color: #0D325A; */
+  background-color: #0D325A; */
 }
 
 nav {
-  height: 55px;
-  background-color: #0D325A;
+  height: 80px;
+}
+
+ul {
+  line-height: 80px;
+  height: 80px;
+  vertical-align:middle;
+  padding-top: 3px;
 }
 
 .logo {
-  display: inline-block;
-  /* margin-left: 10px; */
+  vertical-align:middle;
 }
 
-a {
+header a {
   text-decoration: none;
   color: white;
 }
@@ -38,33 +55,162 @@ li {
   list-style: none;
   text-transform: uppercase;
   font-size: 0.7em;
-  vertical-align:middle;
   margin-left: 20px;
-}
-
-div, ul.menu, li {
-  display: inline-block;
 }
 
 .flo-right {
   float: right;
+  margin-left: 10px;
 }
 
-#border-button {
+.border-button {
   border: 2px solid white;
   border-radius: 8px;
   padding: 8px;
 }
 
-#color-button {
-
+.color-button {
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #7cbb02
 }
 
-/* --- JUMBO --- */
+/* <!-- JUMBO --> */
+/* (part of header) */
 .jumbo {
   background: url(./img/background-header.png);
   height: 500px;
-  background-size: auto 100%;
-  background-position: center;
+  /* background-position: center; */
+  /* background-size: auto 100%; */
+  background-position: 110% 100%; /* funziona per lo spostamento come coordinate X - Y */
+  background-size: 65%; /*controlla le dimensione dell'immagine in background */
   background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 3em;
+  color: white;
+  padding-top: 100px;
+}
+
+p.jumb-button {
+  margin-top: 20px;  /*PERCHE CAZZO NON VA IL MARGIN???? perche in container è 0. ho aggiunto un div container (spostandolo da h1 e p) e ora funziona anche l'inline block ed ha, ovviamente, una larghezza diversa da 80%*/
+  padding: 15px;
+  text-transform: uppercase;
+  background-color: #7cbb02;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* <!-- GRAY ZONE --> */
+.bg-gray {
+  background-color: lightgray;
+  text-align: center;
+}
+
+h3 {
+  padding-top: 25px;
+}
+
+p.subtitle {
+  color: gray;
+  font-size: 0.8em;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+/* <!-- FIRST ROW --> */
+/* <!-- first column --> */
+.col-30 {
+  width: calc(100% / 3);
+  float: left;
+  text-align: center;
+  padding: 0 25px;
+}
+
+div.image {
+  text-align: center;
+  height: 180px;
+  margin-top: 30px;
+}
+
+div.image img {
+  height: 100%;
+}
+
+h3.greentitle {
+  color: #7cbb02;
+}
+
+hr.shortdark {
+  width: 15%;
+  margin: 30px auto;
+  border: 1px solid gray;
+}
+
+.paragraph {
+  color: gray;
+}
+
+/* <!-- second column --> */
+/* <!-- third column --> */
+/* = 1°, 2° */
+
+/* <!-- HR --> */
+hr.between {
+  width: 95%;
+  border: 1px solid lightgray;
+  margin: 30px auto;
+}
+
+/* <!-- SECOND ROW --> */
+/* <!-- first column --> */
+.col-50 {
+  width: 50%;
+  float: left;
+}
+
+.img {
+  height: 380px;
+  margin-top: 25px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.img img {
+  height: 100%;
+}
+
+/* <!-- second column --> */
+/* wit common selector to first column */
+.extramrg {
+  padding-left: 70px;
+}
+
+.extramrg h2 {
+  line-height: 1.5em;
+  font-size: 1.9em;
+  padding: 25px 0;
+}
+
+.extramrg p {
+  padding-bottom: 20px;
+}
+
+/* <!-- FOOTER --> */
+footer {
+  background-color: lightgray;
+  height: 150px;
+}
+
+/* col-50 selectors in row 2 columt 1 too */
+
+.fixed-bottom a {
+  text-decoration: none;
+  color: white;
+  border-radius: 8px 8px 0 0;
+  padding: 8px;
+  background-color: #7cbb02;
+  /* position: fixed; */
 }
