@@ -218,7 +218,18 @@ section > p {
   color: gray;
 }
 
+.float {
+  float: right;
+}
 
+span {
+  text-decoration: underline;
+  padding-left: 15px
+}
+
+span::after {
+  content: "\25bc";
+}
 
 .fixed-bottom a {
   text-decoration: none;
@@ -226,5 +237,7 @@ section > p {
   border-radius: 8px 8px 0 0;
   padding: 8px;
   background-color: #7cbb02;
-  /* position: fixed; */
+  position: fixed;
+  right: 200px;
+  bottom: 0px;
 }
