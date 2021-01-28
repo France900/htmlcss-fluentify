@@ -209,12 +209,12 @@ footer {
   height: 150px;
 }
 
-footer p {
+footer p, span {
   font-size: 0.8em;
   display: inline-block;
 }
 
-section > p {
+section > p, span {
   color: gray;
 }
 
@@ -224,7 +224,7 @@ section > p {
 
 span {
   text-decoration: underline;
-  padding-left: 15px
+  padding-right: 15px
 }
 
 span::after {
